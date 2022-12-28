@@ -1,0 +1,69 @@
+@use "../utils/" as u;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+.first-bg {
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+// these are styles offered by frontend mentor
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.display {
+  display: none;
+}
+
+.display-a a {
+  display: none;
+}

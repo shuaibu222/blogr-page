@@ -1,0 +1,36 @@
+@use "../utils/" as u;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: u.rem(20);
+  max-width: 90vw;
+  margin-inline: auto;
+  min-height: 50vh;
+
+  @include u.breakpoint-up(large) {
+    max-width: 80vw;
+  }
+
+  > h1 {
+    font-size: u.rem(40);
+    font-weight: bolder;
+
+    @include u.breakpoint-up(medium) {
+      font-size: u.rem(50);
+    }
+  }
+  > p {
+    color: u.$grayishblue-footertext;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: u.rem(13);
+  }
+}

@@ -1,0 +1,35 @@
+// Ubuntu fonts
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+
+// Overpass fonts
+
+@font-face {
+  font-family: "Overpass";
+  src: url("/src/assets/fonts/Overpass/static/Overpass-Light.ttf");
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("/src/assets/fonts/Overpass/static/Overpass-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("/src/assets/fonts/Overpass/static/Overpass-Regular.ttf");
+}

@@ -1,0 +1,27 @@
+@use "../utils/" as u;
+
+.cta-btn {
+  display: block;
+  padding: u.rem(10) u.rem(25) u.rem(10) u.rem(25);
+}
+.white-btn {
+  background: whitesmoke;
+  color: u.$lightred-cta;
+  border-radius: u.rem(25);
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: u.$verylightred-hover;
+    color: u.$white-text;
+  }
+}
+.transparent-btn {
+  border: 1px solid whitesmoke;
+  border-radius: u.rem(25);
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background: whitesmoke;
+    color: u.$lightred-cta;
+  }
+}
