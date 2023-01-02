@@ -1,0 +1,78 @@
+@use "../utils/" as u;
+
+.third-bg {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  min-height: 40vh;
+  border-top-right-radius: u.rem(100);
+  border-bottom-left-radius: u.rem(100);
+  padding-top: u.rem(50);
+  padding-bottom: u.rem(50);
+
+  @include u.breakpoint-up(medium) {
+    padding: u.rem(20);
+  }
+
+  &__image {
+    position: absolute;
+    display: block;
+    top: u.rem(-230);
+    left: u.rem(-150);
+
+    > img {
+      width: u.rem(730);
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: u.rem(50);
+    max-width: 90vw;
+    margin-inline: auto;
+
+    @include u.breakpoint-up(medium) {
+      flex-direction: row;
+      max-width: 80vw;
+    }
+
+    &--phone-img {
+      position: relative;
+
+      > img {
+        display: block;
+        width: u.rem(400);
+      }
+    }
+
+    &--text-desc {
+      display: flex;
+      flex-direction: column;
+      gap: u.rem(30);
+
+      > h3 {
+        font-size: u.rem(40);
+        font-weight: normal;
+        text-align: center;
+
+        @include u.breakpoint-up(medium) {
+          text-align: left;
+        }
+      }
+      > p {
+        font-size: u.rem(17);
+        font-weight: 100;
+        text-align: center;
+        line-height: 1.6;
+        word-spacing: 1.1px;
+
+        @include u.breakpoint-up(medium) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

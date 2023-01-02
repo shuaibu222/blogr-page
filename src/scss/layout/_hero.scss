@@ -3,21 +3,23 @@
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   gap: u.rem(20);
   max-width: 90vw;
   margin-inline: auto;
-  min-height: 50vh;
+  min-height: 55vh;
+  margin-top: u.rem(100);
+  position: relative;
+  z-index: 1;
 
   @include u.breakpoint-up(large) {
     max-width: 80vw;
   }
 
   > h1 {
-    font-size: u.rem(40);
-    font-weight: bolder;
+    font-size: u.rem(35);
+    font-weight: normal;
 
     @include u.breakpoint-up(medium) {
       font-size: u.rem(50);

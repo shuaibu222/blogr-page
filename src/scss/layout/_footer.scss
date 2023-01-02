@@ -1,0 +1,61 @@
+@use "../utils/" as u;
+
+.footer-bg {
+  min-height: 40vh;
+  background: u.$footerbackground;
+  margin-top: u.rem(60);
+  border-top-right-radius: u.rem(100);
+
+  &__footer {
+    display: grid;
+    place-content: center;
+    gap: u.rem(40);
+    max-width: 90vw;
+    margin-inline: auto;
+    padding-top: u.rem(70);
+    padding-bottom: u.rem(70);
+
+    @include u.breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include u.breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--logo {
+      display: grid;
+      justify-content: center;
+      margin-bottom: u.rem(20);
+    }
+
+    &--grid {
+      display: grid;
+      gap: u.rem(30);
+      text-align: center;
+
+      > h3 {
+        font-size: u.rem(17);
+        font-weight: normal;
+      }
+
+      > ul {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(5);
+
+        > li {
+          > a {
+            font-size: u.rem(17);
+            font-weight: normal;
+            color: hsl(240, 8%, 72%);
+
+            &:hover {
+              border-bottom: 1px solid hsl(240, 8%, 72%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
