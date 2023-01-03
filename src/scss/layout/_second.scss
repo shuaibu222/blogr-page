@@ -3,7 +3,7 @@
 .second-bg {
   overflow: hidden;
   margin-top: u.rem(30);
-  padding-bottom: u.rem(250);
+  padding-bottom: u.rem(100);
   .second {
     display: flex;
     justify-content: center;
@@ -63,10 +63,10 @@
             background-image: url("/src/assets/images/illustration-editor-desktop.svg");
             background-repeat: no-repeat;
             background-size: 82%;
-            width: u.rem(1000);
-            height: u.rem(1000);
-            top: u.rem(-200);
-            left: u.rem(-110);
+            width: u.rem(900);
+            height: u.rem(900);
+            top: u.rem(-180);
+            left: u.rem(-60);
           }
         }
       }

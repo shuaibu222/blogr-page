@@ -1,16 +1,35 @@
 // ***** Hamburger DOM ***** //
+const header = document.querySelector("header");
 const hamburgerBtn = document.querySelector(".hamburger-icon");
-hamMenu = document.getElementById("accordion");
+const hamMenu = document.getElementById("accordion");
+const menu2 = document.querySelector(".menu2");
+const hasFades = document.querySelectorAll(".has-fade");
 
 // ***** Accordion DOM ***** //
 const accordion = document.querySelector(".accordion");
 const label = document.querySelectorAll(".label");
 const content = document.querySelectorAll(".content");
 
-// this si the nav itself
+// this is the nav itself
 hamburgerBtn.addEventListener("click", () => {
-  hamburgerBtn.classList.toggle("ham-icon");
+  // hamburger button
+  hamburgerBtn.classList.toggle("open");
+  // hamburger menu
+  hamburgerBtn.classList.toggle("visible");
+  // accordion
   hamMenu.classList.toggle("display");
+
+  if (header.classList.contains("active")) {
+    hasFades.forEach(function (h) {
+      h.classList.remove("fade-in");
+      h.classList.add("fade-out");
+    });
+  } else {
+    hasFades.forEach(function (h) {
+      h.classList.add("fade-in");
+      h.classList.remove("fade-out");
+    });
+  }
 });
 
 // this is the accordion JS code

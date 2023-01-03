@@ -8,7 +8,6 @@
 
   &__footer {
     display: grid;
-    place-content: center;
     gap: u.rem(40);
     max-width: 90vw;
     margin-inline: auto;
@@ -16,6 +15,8 @@
     padding-bottom: u.rem(70);
 
     @include u.breakpoint-up(medium) {
+      max-width: 80vw;
+      justify-items: start;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -30,8 +31,9 @@
     }
 
     &--grid {
-      display: grid;
-      gap: u.rem(30);
+      display: flex;
+      flex-direction: column;
+      gap: u.rem(25);
       text-align: center;
 
       > h3 {
@@ -42,11 +44,11 @@
       > ul {
         display: flex;
         flex-direction: column;
-        gap: u.rem(5);
+        gap: u.rem(8);
 
         > li {
           > a {
-            font-size: u.rem(17);
+            font-size: u.rem(15);
             font-weight: normal;
             color: hsl(240, 8%, 72%);
 
