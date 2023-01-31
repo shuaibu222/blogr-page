@@ -37,7 +37,7 @@
 
 ### Continued development
 
-- My area of concentration and focus next time is using Javascript to call real shortener API to make the website with full functionality.
+- My area of concentration and focus on advanced way of using overflow.
 
 ## Author
 
