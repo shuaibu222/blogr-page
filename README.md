@@ -25,7 +25,7 @@
 ### Built with
 
 - HTML5
-- SAA
+- SASS
 - Flexbox
 - Grid System
 - Mobile-first workflow
