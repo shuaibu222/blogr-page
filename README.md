@@ -4,7 +4,7 @@
 
 ### Why this project?
 
-- I chose this project because is a full one page website which will showcase my ability to build full page website, it's beutiful UI and lastly the URL shortener feature.
+- I chose this project because is a full one page website which will showcase my ability to build full page website, it's beutiful UI.
 
 ### How do I get unstuck when am stuck
 
