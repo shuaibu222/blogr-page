@@ -3,18 +3,22 @@
 @font-face {
   font-family: "Ubuntu";
   src: url("/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Ubuntu";
   src: url("/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Ubuntu";
   src: url("/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Ubuntu";
   src: url("/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf");
+  font-display: swap;
 }
 
 // Overpass fonts
@@ -22,14 +26,17 @@
 @font-face {
   font-family: "Overpass";
   src: url("/src/assets/fonts/Overpass/static/Overpass-Light.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Overpass";
   src: url("/src/assets/fonts/Overpass/static/Overpass-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Overpass";
   src: url("/src/assets/fonts/Overpass/static/Overpass-Regular.ttf");
+  font-display: swap;
 }
